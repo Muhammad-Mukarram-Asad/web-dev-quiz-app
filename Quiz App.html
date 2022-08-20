@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+            font-weight: 400;
+        }
+
+        @keyframes animation-1 {
+            0% {
+                color: black;
+                background-color: white;
+            }
+
+            25% {
+                color: white;
+                background-color: black;
+            }
+
+            50% {
+                content: "Devloped By Mukarram Bhai.";
+                color: blue;
+                background-color: white;
+            }
+
+            75% {
+                content: "Devloped By Mukarram Bhai.";
+                color: grey;
+                background-color: rgb(230, 213, 213);
+            }
+
+            100% {
+                content: "Devloped By Mukarram Bhai.";
+                color: white;
+                background-color: black;
+            }
+        }
+
+        .heading1 {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+            animation: animation1 10s infinite linear;
+        }
+
+        #text-adder::after {
+            content: "";
+            animation: animation-1 20s infinite linear;
+        }
+        body{
+            background-color: hsl(206, 92%, 94%);
+            display: block;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .container_1 {
+            height: 100;
+            /* width: 100vw;  */
+            margin-top: 20px;
+            /* display: grid;
+            place-items: center; */
+        }
+
+        .inner-div {
+            /* width: 50vw;
+            height: 500px; */
+            padding: 0 3rem;
+            background: linear-gradient(lightblue , blue);
+        
+            /* background : linear-gradient( white , black); */
+            border: 3px solid purple;
+            border-radius: 15px;
+            box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+        }
+        .inner-div ul{
+            margin: 10px;
+            padding: 10px;
+            font-family:cursive;
+
+        }
+        .inner-div ul li{
+            text-decoration: none;
+            color: white;
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        input{
+            cursor: pointer;
+        }
+        .btns{
+            display: block;
+            margin-bottom: 30px;
+            padding: 10px;
+            border: none;
+            width: 200px;
+            color: white;
+            font-size: 25px;
+            background-color: black;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 10px; 
+
+        }
+        .btns:hover{
+            background-color: white;
+            color: black;
+        }
+        #showscore{
+            display: none;
+            /* width: 500px;
+            height: 200px; */
+            font-size: 25px;
+            color: purple;
+            border: 2px solid black;
+            background-color: #dfe6e9;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+            margin-left: 10px; 
+            padding: 6px 20px;
+            text-align: center;
+        }
+        #showscore:hover
+        {
+            color: black;
+            background-color: white;
+            cursor: pointer;
+            border-color: purple;
+        }
+        span
+        {
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container container_1">
+        <h1 class="heading1"> Welcome to Web Development Quiz ☺☺ <span id="text-adder"></span></h1>
+        <div class="inner-div container">
+            <h2 class="question"> Questions of the answers comes here</h2>
+            <!-- name sb ko same dain ga ta ka wo select sirf ek hi ko kara wrna wo ek sa ziada selct kr skta hai -->
+            <ul>
+                <li> <input type="radio" name="ans" id="ans1" class="answer">
+                    <label for="ans1" id="option-1"> Answer Options</label>
+                </li>
+
+                <li> <input type="radio" name="ans" id="ans2" class="answer">
+                    <label for="ans2" id="option-2"> Answer Options</label>
+                </li>
+
+                <li> <input type="radio" name="ans" id="ans3" class="answer">
+                    <label for="ans3" id="option-3"> Answer Options</label>
+                </li>
+
+                <li> <input type="radio" name="ans" id="ans4" class="answer">
+                    <label for="ans4" id="option-4"> Answer Options</label>
+                </li>
+            </ul>
+
+            <!-- <button id="next" onclick="nextQuestion()">Next</button> -->
+
+            <button id="submit_btn" class="btn btn-primary btn-lg btns"> Submit </button>
+            <div id="showscore" class="scoreArea">
+            </div>
+            <p id="msg" class="container" style="display: none;"><span>Note: </span></p>
+
+        </div>
+
+    </div>
+    <script src="QuizApp.js"> </script>
+
+</body>
+
+</html>
