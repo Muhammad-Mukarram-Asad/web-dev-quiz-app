@@ -5,7 +5,7 @@ const quizlist = [
     b: "Hey To my Land.",
     c: "Hyper  Text  Markup Land.",
     d: "Hyper Text Markup Language.",
-    ans: "ans4",
+    ans: "fourth",
   },
 
   {
@@ -14,7 +14,7 @@ const quizlist = [
     b: "Car Styling sheet.",
     c: "Cascading Styling sheet.",
     d: "Court Styling sheet.",
-    ans: "ans3",
+    ans: "third",
   },
   {
     title: " Q.3) What is the full form of HTTP?",
@@ -22,15 +22,15 @@ const quizlist = [
     b: "Hey To The Pencil.",
     c: "Hyper Text Transfer Protocol.",
     d: "Hyper Text Text Protocol.",
-    ans: "ans3",
+    ans: "third",
   },
   {
     title: " Q.4) What is the full form of JS?",
-    a: "Jame Scenario.",
-    b: "Java Softcopy.",
+    a: "Java Science.",
+    b: "Java Soft.",
     c: "Java Script.",
-    d: "Jamshed Superior.",
-    ans: "ans3",
+    d: "JavaScripts.",
+    ans: "third",
   },
 
   {
@@ -39,7 +39,7 @@ const quizlist = [
     b: "write something on browser.",
     c: "Both a & b.",
     d: "None of the above.",
-    ans: "ans2",
+    ans: "second",
   },
 
   {
@@ -48,7 +48,7 @@ const quizlist = [
     b: "Java, Javascript,Python.",
     c: "React, Redux, J-Queary.",
     d: "Javascript, CSS, HTML.",
-    ans: "ans4",
+    ans: "fourth",
   },
 
   {
@@ -57,34 +57,34 @@ const quizlist = [
     b: "Yes.",
     c: "Fifty-Fifty.",
     d: "None of the above.",
-    ans: "ans3",
+    ans: "first",
   },
 
   {
-    title: " Q.8) Where the React.js is use?",
-    a: "Full stack Development.",
-    b: "Front-end development.",
-    c: "Back-end development.",
+    title: " Q.8) Where the React.js use in the following options",
+    a: "Full Stack Development.",
+    b: "Frontend development.",
+    c: "Backend development.",
     d: "No, it is not use in the above options.",
-    ans: "ans2",
+    ans: "second",
   },
 
   {
-    title: " Q.9) Where the Node.js is use?",
+    title: " Q.9) Node.js is basically for?",
     a: "Full stack Development.",
-    b: "Front-end development.",
-    c: "Back-end development.",
+    b: "Frontend development.",
+    c: "Backend development.",
     d: "No, it is not use in the above options.",
-    ans: "ans3",
+    ans: "third",
   },
 
   {
-    title: " Q.10) Which is known as the framework of CSS?",
+    title: " Q.10) Which of the following are the frameworks of CSS?",
     a: "Next/Express.",
     b: "Bootstrap.",
     c: "tailwind.",
-    d: "Combo, Both c & d.",
-    ans: "ans2",
+    d: " Both b & c.",
+    ans: "fourth",
   },
 ];
 
@@ -112,10 +112,10 @@ loadQuestion();
 
 function getcheckAnswer() {
   var answerId;
-  answers.forEach((current_element) => {
-    if (current_element.checked) {
-      current_element.checked = '';
-      answerId = current_element.id;
+  answers.forEach((item) => {
+    if (item.checked) {
+      item.checked = '';
+      answerId = item.id;
     }
   });
   return answerId;
