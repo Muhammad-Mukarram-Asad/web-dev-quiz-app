@@ -1,6 +1,6 @@
 const quizlist = [
   {
-    title: " Q.1) What is the full form of HTML?",
+    title: " Q.1) HTML stands for?",
     a: "Hello To my Land.",
     b: "Hey To my Land.",
     c: "Hyper  Text  Markup Land.",
@@ -70,7 +70,7 @@ const quizlist = [
   },
 
   {
-    title: " Q.9) Node.js is basically for?",
+    title: " Q.9) Node.js is basically use for?",
     a: "Full stack Development.",
     b: "Frontend development.",
     c: "Backend development.",
