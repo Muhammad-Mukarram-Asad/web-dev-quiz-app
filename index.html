@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App Website</title>
+    <title>Quiz App </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
@@ -22,31 +22,21 @@
 
         @keyframes animation-1 {
             0% {
+                 content: "Developed By",
                 color: black;
                 background-color: white;
             }
 
-            25% {
+             50% {
+                content: "Developed By Mukarram";
                 color: white;
                 background-color: black;
-            }
-
-            50% {
-                content: "Devloped By Mukarram Bhai.";
-                color: blue;
-                background-color: white;
-            }
-
-            75% {
-                content: "Devloped By Mukarram Bhai.";
-                color: grey;
-                background-color: rgb(230, 213, 213);
             }
 
             100% {
-                content: "Devloped By Mukarram Bhai Aka Baba Urooj.";
+                content: "Developed By Mukarram Asad";
                 color: white;
-                background-color: black;
+                background-color: blue;
             }
         }
 
@@ -163,9 +153,9 @@
 
 <body>
     <div class="container container_1">
-        <h1 class="heading1"> Welcome to Web Development Quiz ☺☺ <span id="text-adder"></span></h1>
+        <h1 class="heading1"> Welcome to Web Development Quiz ☺☺</h1>
         <div class="inner-div container">
-            <h2 class="question"> Questions of the answers comes here</h2>
+            <h2 class="question"> Let's Get Started</h2>
             <!-- name sb ko same dain ga ta ka wo select sirf ek hi ko kara wrna wo ek sa ziada selct kr skta hai -->
             <ul>
                 <li> <input type="radio" name="ans" id="ans1" class="answer">
@@ -195,6 +185,9 @@
         </div>
 
     </div>
+    <footer class="footer">
+         <span id="text-adder"></span>
+    </footer>
     <script src="script.js"> </script>
 
 </body>
