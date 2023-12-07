@@ -20,23 +20,17 @@
             font-weight: 400;
         }
 
-        @keyframes animation-1 {
+        @keyframes nameAnimation {
             0% {
                  content: "Developed By",
                 color: black;
                 background-color: white;
             }
 
-             50% {
-                content: "Developed By Mukarram";
+             100% {
+                content: "Developed By: Mukarram";
                 color: white;
                 background-color: black;
-            }
-
-            100% {
-                content: "Developed By Mukarram Asad";
-                color: white;
-                background-color: blue;
             }
         }
 
@@ -44,12 +38,11 @@
             text-align: center;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 500;
-            animation: animation1 10s infinite linear;
         }
 
         #text-adder::after {
             content: "";
-            animation: animation-1 20s infinite linear;
+            animation: nameAnimation 20s 5 linear;
         }
         body{
             background-color: hsl(206, 92%, 94%);
@@ -149,8 +142,9 @@
             font-size: 22px;
         }
         .footer{
-            display : block;
-            margin: 10px auto;
+           display:flex;
+            justify-content:center;
+            align-items:center;
             width: 100%;
             height: auto;
         }
@@ -159,7 +153,7 @@
 
 <body>
     <div class="container container_1">
-        <h1 class="heading1"> Welcome to Web Development Quiz ☺☺</h1>
+        <h1 class="heading1"> Welcome to Web Development Quiz</h1>
         <div class="inner-div container">
             <h2 class="question"> Let's Get Started</h2>
             <!-- name sb ko same dain ga ta ka wo select sirf ek hi ko kara wrna wo ek sa ziada selct kr skta hai -->
